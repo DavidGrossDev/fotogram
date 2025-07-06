@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+header,
+footer {
+    height: 120px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header img {
+    height: 64px;
+    margin-left: 16px;
+}
+
+main {
+    background-color: blue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline {
+    height: 120px;
+    margin-top: 48px;
+    padding: 16px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.bck_gnd_color {
+    background-color: rgb(29, 29, 121);
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+main .image:hover {
+    border-color: white;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.d_none {
+    display: none;
+}
+
+.dialog_board {
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 30px 0px 30px;
+    border: 3px solid black;
+    background-color: blue;
+}
+
+.dialog_board button {
+    background-color: blue;
+}
+
+.overlay_top {
+    height: 46px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 0px 30px 0px 0px;
+}
+
+.overlay_top button {
+    margin-right: 20px;
+}
+
+nav {
+    height: 56px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 0px 30px;
+}
+
+.dialog_image_card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog_image_card .image {
+    width: 90%;
+    height: 100%;
+    margin-top: 0;
+    border: 2px solid black;
+    border-radius: 0;
+}
+
+button {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0;
+    padding-inline: 0;
+    border-width: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+nav img {
+    height: 32px;
+    border-radius: 50%;
+}
+
+.revers_arrow_img {
+    transform: rotate(180deg);
+}
+
+.close img {
+    height: 20px;
+    padding: 4px;
+}
+
+@media (max-width: 1050px) {
+
+    .headline {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 780px) {
+
+    h1 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 635px) {
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    header,
+    footer {
+        height: 80px;
+    }
+
+    #content {
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .bordOverlay {
+        width: 95%;
+    }
+}
+
+@media (max-width: 435px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    .dialog_image .image {
+        height: 70%;
+        aspect-ratio: 1/1;
+    }
+
+}
+
+@media (max-width: 362px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    header,
+    footer {
+        height: 80px;
+    }
+
+    #content {
+        margin-top: 0;
+        width: 80%;
+    }
+
+}
